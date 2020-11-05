@@ -21,6 +21,7 @@ namespace MetricsSandboxCore31
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureAppMetricsHostingConfiguration(options=> options.AllEndpointsPort = 5001)
                 .ConfigureMetrics(Metrics)
                 .UseMetrics()
                 .ConfigureWebHostDefaults(webBuilder =>

@@ -161,7 +161,7 @@ namespace Microsoft.AspNetCore.Hosting
 
             if (ports.Any())
             {
-                throw new NotImplementedException("To implement setting custom ports for netcore3.0, removed for now in App.Metrics 4.0.0");
+                //throw new NotImplementedException("To implement setting custom ports for netcore3.0, removed for now in App.Metrics 4.0.0");
                 // var existingUrl = hostBuilder.GetSetting(WebHostDefaults.ServerUrlsKey);
                 // var additionalUrls = string.Join(";", ports.Distinct().Select(p => $"http://*:{p}/"));
                 // hostBuilder.UseSetting(WebHostDefaults.ServerUrlsKey, $"{existingUrl};{additionalUrls}");
